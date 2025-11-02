@@ -7,13 +7,14 @@
 
 }
 .p{
-    height: 50px;
+    height: 200px;
     overflow: hidden;
     position: relative;
 }
 .p p{
     height:50px;
     line-height: 45px;
+    color:black;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 10px;
@@ -21,3 +22,17 @@
     white-space: nowrap;
     transition: all 0.4s ease-in-out
 }
+.p:hover p{
+    transform: translate3d(0, -200px, 0);
+}
+.p:nth-child(odd){
+    transform:skew(30deg, -15deg);
+}
+.p:nth-child(even){
+    transform:skew(0deg, -15deg);
+}
+.p:nth-child(1){left:29px;}
+.p:nth-child(2){left:58px;}
+.p:nth-child(3){left:87px;}
+.p:nth-child(4){left:116px;}
+
