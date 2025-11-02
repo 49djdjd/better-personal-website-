@@ -1,20 +1,21 @@
 .project{
-    font-size: 68px;
+    font-size: 40px;
     padding: 80px 0;
     font-weight: 900;
     text-transform:uppercase;
+    margin:0 auto;
 
 
 }
 .p{
-    height: 200px;
+    height: 100px;
     overflow: hidden;
     position: relative;
 }
 .p p{
-    height:50px;
+    height:100px;
     line-height: 45px;
-    color:black;
+    color:white;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 10px;
@@ -23,16 +24,21 @@
     transition: all 0.4s ease-in-out
 }
 .p:hover p{
-    transform: translate3d(0, -200px, 0);
+    transform: translate3d(0, -150px, 0);
 }
 .p:nth-child(odd){
-    transform:skew(30deg, -15deg);
+    transform:skew(60deg, -30deg) scaleY(0.66667);
 }
 .p:nth-child(even){
-    transform:skew(0deg, -15deg);
+    transform:skew(0deg, -30deg) scaleY(1.33333);
 }
 .p:nth-child(1){left:29px;}
 .p:nth-child(2){left:58px;}
 .p:nth-child(3){left:87px;}
 .p:nth-child(4){left:116px;}
+.p:nth-child(5){left:145px;}
+
+
+
+
 
