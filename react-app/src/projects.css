@@ -18,12 +18,12 @@
     padding-top: 50px;
     padding-bottom: 0px;
     padding-left:0px;
-    padding-right:50px;
+    padding-right:150px;
     white-space: nowrap;
     transition: all 0.4s ease-in-out
 }
 .p:hover p{
-    transform: translate3d(0, -150px, 0);
+    transform: translate3d(0, -200px, 0);
 }
 .p:nth-child(even){
     transform:skew(60deg, -30deg) scaleY(0.66667);
