@@ -9,6 +9,7 @@
     height: 150px;
     overflow: hidden;
     position: relative;
+    margin-bottom:-80px;
 }
 .p p{
     height:100px;
@@ -22,7 +23,10 @@
     white-space: nowrap;
     transition: all 0.4s ease-in-out
 }
-.p:hover p{
+.button{
+    cursor: pointer;
+}
+.project:hover p{
     transform: translate3d(0, -200px, 0);
 }
 .p:nth-child(even){
@@ -31,11 +35,11 @@
 .p:nth-child(odd){
     transform:skew(0deg, -30deg) scaleY(1.33333);
 }
-.p:nth-child(1){left:29px;}
-.p:nth-child(2){left:58px;}
-.p:nth-child(3){left:87px;}
-.p:nth-child(4){left:116px;}
-.p:nth-child(5){left:145px;}
+.p:nth-child(1){left:25px;}
+.p:nth-child(2){left:50px;}
+.p:nth-child(3){left:75px;}
+.p:nth-child(4){left:100px;}
+.p:nth-child(5){left:125px;}
 
 
 
