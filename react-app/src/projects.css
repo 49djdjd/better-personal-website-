@@ -10,10 +10,12 @@
     overflow: hidden;
     position: relative;
     margin-bottom:-80px;
+    cursor:pointer;
 }
 .p p{
     height:100px;
     font-size: 50px;
+    pointer-events: none;
     line-height: 45px;
     color:white;
     padding-top: 50px;
@@ -22,9 +24,6 @@
     padding-right:150px;
     white-space: nowrap;
     transition: all 0.4s ease-in-out
-}
-.button{
-    cursor: pointer;
 }
 .project:hover p{
     transform: translate3d(0, -200px, 0);
