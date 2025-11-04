@@ -5,7 +5,10 @@ function Projects() {
     const [selectedProject, setSelectedProject] = useState('');
     function checkClick(project){
         setShowPopup(true);
-        selectedProject(project);
+        setSelectedProject(project);
+    }
+    function closePopup(){
+        setShowPopup(false);
     }
     return (
     <div className ="projects">
@@ -13,20 +16,19 @@ function Projects() {
         <ul className="project">
             <li className="p">
                 <p>Project 1</p>
-                <p className = "button" onClick={checkClick('Personal Website')}>Personal Website</p>
-                selectedProject = Personal Website
+                <p className = "button" onClick={() => checkClick('Personal Website')}>Personal Website</p>
             </li>
             <li className="p">
                 <p>Project 2</p>
-                <p className = "button" onClick={checkClick}>DBH Website</p>
+                <p className = "button" onClick={() => checkClick('DBH Website')}>DBH Website</p>
             </li>
             <li className="p">
                 <p>Project 3</p>
-                <p className = "button" onClick={checkClick}>PAL Website</p>
+                <p className = "button" onClick={() => checkClick('PAL Website')}>PAL Website</p>
             </li>
             <li className="p">
                 <p>Project 4</p>
-                <p className = "button" onClick={checkClick}>Virtual Pet</p>
+                <p className = "button" onClick={() => checkClick('Virtual Pet')}>Virtual Pet</p>
             </li>
             
         </ul>
@@ -34,11 +36,10 @@ function Projects() {
             <div className = "popup">
                 <h1>Personal Website</h1>
                 <p>One of the first full fledge programs that I made using HTML, CSS, and JS. This program took me a while and while I am proud of it, I still see room for improvement!!</p>
-                <button>Close</button>
+                <button onClick={closePopup}>Close</button>
             </div>
         )}
     </div>
     )
-  }
-  
+} 
   export default Projects
