@@ -1,4 +1,5 @@
 import './projects.css'
+import '../../output.css';
 import {useState} from 'react'
 function Projects() {
     const [showPopup, setShowPopup] = useState(false);
