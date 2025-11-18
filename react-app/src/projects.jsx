@@ -11,7 +11,7 @@ function Projects() {
         setShowPopup(false);
     }
     return (
-    <div className ="projects">
+    <div className ="bg-red-500">
         <h1>Hello! These are my past projects</h1>
         <ul className="project" onClick={() => setShowPopup(true)}>
             <li className="p" >
